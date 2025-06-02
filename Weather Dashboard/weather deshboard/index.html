@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="search-box">
+        <input type="text" placeholder="Search for places..." />
+        <button class="search-btn" aria-label="Search">&#128269;</button>
+      </div>
+      <div class="current-weather">
+        <div class="weather-icon">
+          <img src="https://i.pinimg.com/736x/7f/a6/d0/7fa6d0a9872020131a9721c18411e53c.jpg" alt="Clear sky" />
+        </div>
+        <div class="temperature">38.57 &deg;C</div>
+        <div class="date-time">Monday, 16:00</div>
+        <button class="btn-favorite">Save to Favorites</button>
+      </div>
+      <div class="favorite-cities">
+        <h3>Favorite Cities:</h3>
+        <ul>
+          <li><button class="city-btn">Pune</button></li>
+          <li><button class="city-btn">Rajkot</button></li>
+        </ul>
+      </div>
+      <div class="weather-description">
+        <div class="condition-icon">&#9728;</div>
+        <div class="condition-text">Clear sky</div>
+        <div class="location">Khusairy, Punjab</div>
+      </div>
+    </aside>
+    <main class="main-content">
+      <section class="highlights">
+        <h2>Today's Highlights</h2>
+        <div class="highlights-grid">
+          <div class="card pressure">
+            <h4>Pressure</h4>
+            <div class="pressure-gauge">
+              <svg viewBox="0 0 100 50" class="gauge">
+                <path d="M10 40 A40 40 0 0 1 90 40" fill="#eee" />
+                <path d="M10 40 A40 40 0 0 1 60 10" fill="#f4a261" />
+              </svg>
+              <div class="pressure-value">997 hPa</div>
+            </div>
+          </div>
+          <div class="card wind-status">
+            <h4>Wind Status</h4>
+            <div class="wind-speed">2.01 <span>m/s</span></div>
+            <div class="wind-direction">WSW &#8594;</div>
+          </div>
+          <div class="card sunrise-sunset">
+            <h4>Sunrise &amp; Sunset</h4>
+            <div class="sunrise">
+              <span class="icon">&#9728;</span> 5:35 AM
+            </div>
+            <div class="sunset">
+              <span class="icon">&#9790;</span> 7:42 PM
+            </div>
+          </div>
+          <div class="card humidity">
+            <h4>Humidity</h4>
+            <div class="humidity-value">17%</div>
+            <div class="humidity-text"><strong>Low Humidity</strong> &#127797;</div>
+          </div>
+          <div class="card visibility">
+            <h4>Visibility</h4>
+            <div class="visibility-value">10 km</div>
+            <div class="visibility-text">Excellent &#128526;</div>
+          </div>
+          <div class="card feels-like">
+            <h4>Feels Like</h4>
+            <div class="feels-value">36.74 &deg;C</div>
+            <div class="feels-text">Hot &#128293;</div>
+          </div>
+        </div>
+      </section>
+      <section class="forecast">
+        <h2>5-Day Forecast</h2>
+        <div class="forecast-grid">
+          <div class="forecast-card">
+            <div class="date">28/05/2025</div>
+            <div class="icon">&#9728;</div>
+            <div class="temp">39&deg;C</div>
+            <div class="desc">Clear</div>
+          </div>
+          <div class="forecast-card">
+            <div class="date">29/05/2025</div>
+            <div class="icon">&#9728;</div>
+            <div class="temp">43&deg;C</div>
+            <div class="desc">Clear</div>
+          </div>
+          <div class="forecast-card">
+            <div class="date">30/05/2025</div>
+            <div class="icon">&#9728;</div>
+            <div class="temp">41&deg;C</div>
+            <div class="desc">Clear</div>
+          </div>
+          <div class="forecast-card">
+            <div class="date">31/05/2025</div>
+            <div class="icon">&#9729;</div>
+            <div class="temp">40&deg;C</div>
+            <div class="desc">Clouds</div>
+          </div>
+          <div class="forecast-card">
+            <div class="date">01/06/2025</div>
+            <div class="icon">&#9729;</div>
+            <div class="temp">39&deg;C</div>
+            <div class="desc">Clouds</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
