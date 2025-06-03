@@ -323,8 +323,8 @@ h2 {
 
   .sidebar {
     width: 100%;
-    flex-direction: row;
-    overflow-x: auto;
+    flex-direction: column; /* Changed from row to column to keep search box visible */
+    overflow-x: visible; /* Changed from auto to visible */
     padding: 10px;
   }
 
